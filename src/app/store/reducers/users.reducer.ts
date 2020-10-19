@@ -18,10 +18,11 @@ const initState: usersState = {
     error: null
 };
 
+// tslint:disable-next-line: variable-name
 const _usersReducer = createReducer(
     initState,
     on(loadUsers, state => ({...state, loading: true})),
-    on(loadUsersSucccess, (state, {users}) => ({...state, users: [...users], loaded: true, loading: false})),
+    on(loadUsersSucccess, (state, {users}) => ({...state, loaded: true, loading: false, users: [...users], error: null})),
     on(loadUsersFail, (state, {payload}) => ({...state, loaded: true, loading: false, error: payload}))
 );
 

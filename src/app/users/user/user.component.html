@@ -1,0 +1,19 @@
+
+<div *ngIf="loading" class="mt-4 alert alert-info text-center" role="alert" >
+    <h4 class="alert-heading"> ... Loading </h4>
+    <i class="mt-4 fa fa-sync fa-spin fa-4x"></i>
+</div>
+
+<div *ngIf="error" class="mt-4 alert alert-danger text-center" role="alert" >
+    <h4 class="alert-heading"> Error </h4>
+    <pre>{{ error | json }}</pre>
+</div>
+
+<div *ngIf="!!!loading" class="card">
+    <img class="card-img-top" [src]="user.avatar" alt="{{user.first_name}}">
+    <div class="card-body">
+        <h4>{{ user.first_name }} {{ user.last_name }}</h4>
+        <p>{{ user.email }}</p>
+        <span>ID: {{user.id}} </span>
+    </div>
+</div>

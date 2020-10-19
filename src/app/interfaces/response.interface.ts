@@ -22,8 +22,15 @@ interface Data {
     avatar: string;
 }
 
+interface ResponseSingle {
+  data: Data;
+  ad: Ad;
+}
+
 export {
     Response,
     Ad,
-    Data
-}
+    Data,
+    ResponseSingle
+};
+

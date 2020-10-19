@@ -14,5 +14,6 @@ class FigurasMenu{
 
 
         System.out.println("Bienvenido al programa de calculo de areas y perimetros");
+        System.out.println("Elija una de las siguientes opciones");
     }
 }

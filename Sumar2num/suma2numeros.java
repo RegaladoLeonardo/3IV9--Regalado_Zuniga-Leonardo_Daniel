@@ -26,6 +26,7 @@ class suma2numeros{
         resultado = num1 + num2 ;
 
         System.out.println("La suma de los numeros es de: " + resultado);
+        System.out.println("Elija una de las siguinetes opciones");
     }
 
 

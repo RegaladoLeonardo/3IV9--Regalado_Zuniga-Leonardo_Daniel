@@ -12,7 +12,7 @@ const APPROUTES: Routes = [
 
 @NgModule({
     imports: [
-        RouterModule.forRoot(APPROUTES)
+        RouterModule.forRoot(APPROUTES, {useHash: true})
     ],
     exports: [
         RouterModule

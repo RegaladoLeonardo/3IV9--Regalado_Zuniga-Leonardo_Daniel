@@ -12,6 +12,7 @@ class FigurasMenu{
         String opcion;
         int altura , base , diagonal ;
         double  perimetro , area ;
+        boolean bandera = true ;
 
                 do{ 
         System.out.println("Bienvenido al programa de calculo de areas y perimetros");
@@ -127,14 +128,20 @@ class FigurasMenu{
                 break;
             
             default:
-                System.out.println("El numero es invalido!!");
+                
             break;
             
 
 
         }
+
+        if(opcion.equals("S")  ||  opcion.equals("s") || opcion.equals("7") ){
+            
+            bandera = false ;
+        } 
+        
                 
-                } while( opcion.equals("S")  &&  opcion.equals("s") && opcion.equals("7")  );                                                                                                        
+                } while( bandera );                                                                                                        
 
     }
 }

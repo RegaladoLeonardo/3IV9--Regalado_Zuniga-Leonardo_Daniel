@@ -306,24 +306,26 @@ class Sub{
                 break; 
                 
                 case 7: 
-                        int numtv, count, pv, sv, tv;
+                        int nm1, nm2, nm3 ,multi, vale;
                     do{
-                        System.out.println("De que tamaño quiere la tabla de valores? (escriba 0 para salir uwu)");
-                        numtv = entrada.nextInt();
-                        count=1;
+                        System.out.println("De que tamaño quiere su tabla??");
+                        vale = entrada.nextInt();
+                        multi=1;
                         do{
-                            pv = count*10;
-                            sv = count*100;
-                            tv = count*1000;
-                            System.out.print(" "+count);
-                            System.out.print(" "+pv);
-                            System.out.print(" "+sv);
-                            System.out.println(" "+tv);
-                            count++;
-                        }while(count<=numtv);
-                    }while(numtv!=0);
+                            nm3 = multi*1000;
+                            nm2 = multi*100;
+                            nm1 = multi*10;
+
+                            multi=multi + 1;
+                            System.out.print(" "+multi);
+                            System.out.print(" "+nm1);
+                            System.out.print(" "+nm2);
+                            System.out.println(" "+nm3);
+                        }while(multi<=vale);
+                        System.out.println("Si quiere regresar al menu principal oprima 0 de lo contario cualquier otro numero ");
+                            regreso =entrada.nextInt();
+                    }while(regreso!=0);
                     
-                
                     
                 break;
 

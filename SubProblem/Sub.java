@@ -7,6 +7,7 @@ class Sub{
         Scanner entrada = new Scanner(System.in);
         int option = 0 ;
         do{ 
+            System.out.println(" ");
             System.out.println("3IV9_REGALADO_ZUÑIGA_LEONARDODABNIEL");
             System.out.println("Elija una de las siguientes opciones:");
             System.out.println("1-Descuento de abono segun la edad del usuario");
@@ -17,8 +18,12 @@ class Sub{
             System.out.println("6-Calculo de areas y perimetros de un rectangulo y triangulo ademas el volumen de una esfera y cilindro");
             System.out.println("7-Tabla de valores 1-10000");
             System.out.println("8-Calculo del factorial de un entero natural ");
-            System.out.println("9-Calculadora");
-            System.out.println("10-salir");
+            System.out.println("9-cuadrado hecho con asteriscos ");
+            System.out.println("10-Cuadrado hueco con asteriscos ");
+            System.out.println("11-Patron de asteriscos ");
+            System.out.println("12-Diamante de asteriscos ");
+            System.out.println("13-Calculadora");
+            System.out.println("14-salir");
 
             int positivo = 0 ;
             int negativo = 0;
@@ -349,11 +354,71 @@ class Sub{
 
                 case 9:
                     do{ 
+                        int i ;
+                        int k ;
+                        System.out.print("Escriba la resolucion de su cuadrado del 1 al 20");
+                        System.out.println("");
+                        int medida = entrada.nextInt();
+                        
+                        for(k =0 ; k < medida ; k++){ 
+                            System.out.println(""); 
+                            for( i = 0 ; i< medida ; i++){
+                                System.out.print("*   ");    
+                            }
+                        }
+                        System.out.println(" ");
+                        System.out.println("Si quiere regresar al menu principal oprima 0 de lo contario cualquier otro numero ");
+                        regreso =entrada.nextInt();
+                    }while( regreso != 0);
+                break;
+
+                case 10:
+                    do{ 
+                        int i ;
+                        int k ;
+                        System.out.print("Escriba la resolucion de su cuadrado del 1 al 20");
+                        System.out.println("");
+                        int medida = entrada.nextInt();
+                        
+                        for(k =0 ; k < medida ; k++){ 
+                            System.out.println(""); 
+                            for( i = 0 ; i< medida ; i++){
+                                System.out.print("*");    
+                            }
+                        }
+                        System.out.println(" ");
+                        System.out.println("Si quiere regresar al menu principal oprima 0 de lo contario cualquier otro numero ");
+                        regreso =entrada.nextInt();
+                    }while( regreso != 0);
+                break;
+
+                case 11:
+                    
+                break;
+
+                case 12:
+                    for(int i = 0 ; i < 2 ; i++){
+                        System.out.println("*");
+                        for(int j = 0 ; j < 2 ; j++){
+                            System.out.println("/");
+                            for(int k = 0 ; k < 2 ; k++){
+                                System.out.print("|");
+                                for(int l = 0 ; l < 2 ; l++){
+                                    System.out.print("#");
+                                }
+                            }
+                        }
+
+                    }
+                break;
+
+                case 13:
+                    do{ 
                         int valor ;
                         float resultado;
                         int nums ;
                         int nums2 ;
-                        System.out.println("Elija la operacion desee");
+                        System.out.println("Elija la operacion que desee");
                         System.out.println("1-Suma");
                         System.out.println("2-Resta");
                         System.out.println("3-multiplicacion");
@@ -408,7 +473,8 @@ class Sub{
                     default:
                     break;
             }
-        }while(option != 10);
+        }while(option != 14);
         System.out.println("Gracias por vernir!!!!");
+        
     }
 }                                 

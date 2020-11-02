@@ -93,12 +93,8 @@ class Evo{
                                                                       System.out.println( "Siquiere ataque principal oprima 1");         
                                                                       System.out.println( "Siquiere ataque secundario oprima 2"); 
                                                                       int fase =entrada.nextInt();
-                                                                      if( fase ==1 ){
-                                                                                    v2 = v2 - (v1*1.5) ;
-                                                                      }else{
-                                                                                    v2 = v2 - v1 ;
-                                                                      }
                                                                       
+                                                                      v2 = v2 - v1 ;
                                                                       
                                                         }while(v2 >0);
                                                         

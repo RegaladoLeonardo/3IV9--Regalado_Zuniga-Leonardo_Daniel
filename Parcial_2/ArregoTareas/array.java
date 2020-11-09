@@ -1,12 +1,10 @@
 import java.util.Scanner;
 
 class array{
-
     public static void main (String[] args){
         Scanner entrada = new Scanner(System.in);
         int[] listaNumeros = new int[10];
         int letra ;
-
         array promedios = new array();
         do{
             promedios.promedioMasMenos(listaNumeros);
@@ -53,7 +51,6 @@ class array{
 
         for( int k=0 ; k<listaNumeros.length ; k++){
             identificador = listaNumeros[k];
-
             if(identificador>0){
                 proPositivo = proPositivo + identificador;
                 contador1= contador1 + 1 ;

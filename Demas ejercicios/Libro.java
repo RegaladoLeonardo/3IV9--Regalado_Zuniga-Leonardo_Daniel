@@ -129,7 +129,7 @@ class Libro{
                                                                                                                 break;
                                                                                     }
                                                                       }while(cual!=4);
-                                                                                    break;
+                                                                      break;
 
                                                         default:
                                                                       break;

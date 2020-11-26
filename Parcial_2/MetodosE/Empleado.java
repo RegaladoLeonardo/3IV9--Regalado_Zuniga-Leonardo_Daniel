@@ -13,7 +13,7 @@ public class Empleado extends Persona{
               public Empleado(){
                             super();
               }
-
+              //sobre carga de constructores
               public void MiSalario(){
                             super.IdEmpleado=2020060346;
                             super.Puesto="Gerente";

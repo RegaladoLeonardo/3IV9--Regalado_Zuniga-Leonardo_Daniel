@@ -25,7 +25,7 @@ class Persona{
               public void setPuesto(String Puesto){
                             this.Puesto=Puesto; 
               }
-              public void setSueldoQuincenal(int[] IdEmpleado){
+              public void setSueldoQuincenal(int IdEmpleado){
                             this.SueldoQuincenal=SueldoQuincenal; 
               }
               public String getNombreEmpleado(){

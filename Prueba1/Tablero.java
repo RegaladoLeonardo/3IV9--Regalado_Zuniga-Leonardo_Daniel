@@ -52,10 +52,10 @@ class Tablero{
                             for(int i=0; i<5; i++){
                                           int b=i+1 ;
                                           System.out.println("Mina----"+b);
-                                          System.out.println("Escriba el numero de la fila");
-                                          y=entrada.nextInt();
-                                          System.out.println("Escriba el numero de la columna");
+                                          System.out.println("Escriba el numero de la Fila");
                                           x=entrada.nextInt();
+                                          System.out.println("Escriba el numero de la Columna");
+                                          y=entrada.nextInt();
                                           x=x-1;
                                           y=y-1;
                                           this.Tabla[x][y]="X";

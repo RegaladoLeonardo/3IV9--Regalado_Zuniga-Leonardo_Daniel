@@ -132,6 +132,7 @@ public class Menu {
                     }
                 }
                 System.out.println("La pizza se corta en "+corte+" porciones");
+                System.out.println("El precio va a ser de "+precio+"$");
                 piza.empacar();
                 
                 break;

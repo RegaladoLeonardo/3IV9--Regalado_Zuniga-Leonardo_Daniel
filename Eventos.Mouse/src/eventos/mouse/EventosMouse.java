@@ -17,7 +17,7 @@ public class EventosMouse {
     public static void main(String[] args) {
         // TODO code application logic here
         Window ventana= new Window();
-        ventana.Window();
+        ventana.setVisible(true);
     }
     
 }

@@ -2,6 +2,7 @@ import java.util.*;
 import java.util.ArrayList;
 
 class Tablero{
+              
               Scanner entrada = new Scanner(System.in);
               private ArrayList<ArrayList<Casilla>> casillas = new ArrayList<ArrayList<Casilla>>();
               /* public String Tabla[][]={{"-","-","-","-","-","-"},
